@@ -149,7 +149,7 @@ module.exports.onChat = async ({ api, event, message }) => {
         const body = event.body ? event.body.toLowerCase() : "";
         if (body.startsWith("baby") || body.startsWith("bby") || body.startsWith("bot") || body.startsWith("jan") || body.startsWith("babu") || body.startsWith("janu")) {
             const arr = body.replace(/^\S+\s*/, "");
-            const randomReplies = ["Bol 🐸", "Bol suntechi 🐍", "Dakis ken 😾?", "Bolo jaan ki korte pari tomar jonno 😞"];
+            const randomReplies = ["Mai Apne Boss Sanskari Ladka Ke Alava Kisi se Baat nhi karunga", "Pahle Kiss Do Tab Hi Hlw Karna", "Tumhara Hi intezar tha Chalo I Love you bolo ab", "Jai Shree Ram", "Mujhe Koi pyar nhi karta tum karoge n😞"];
             if (!arr) {
                 await api.sendMessage(randomReplies[Math.floor(Math.random() * randomReplies.length)], event.threadID, (error, info) => {
                     if (!info) message.reply("info obj not found");
